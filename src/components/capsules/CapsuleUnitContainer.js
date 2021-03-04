@@ -10,6 +10,8 @@ const CapsuleUnitContainer = () => {
     useEffect(() => {
         const fetchCapsules = async () => {
           const response = await axios.get('https://api.spacexdata.com/v4/capsules');
+          //for connecting back end and frontend
+        //const response = await axios.get('https://localhoset:8000/v1/');
           const data = response.data; // array
           // destructuring
          
